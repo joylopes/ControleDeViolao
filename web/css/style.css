@@ -1,0 +1,182 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/09/2018, 11:51:45
+    Author     : Joice
+*/
+
+
+/*Código reset*/ 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background: #eee
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*fim reset*/ 
+
+*{
+    box-sizing: border-box;
+}
+textarea{
+    max-width: 100%;
+}
+
+/*fundo*/
+.fundo{
+    margin-top: 50px;
+    margin-bottom:  50px;
+    background: #fff;
+    padding: 50px 2.5%;
+    border-radius: 10px;
+    max-width: 1300px;
+}
+/*fim fundo*/
+/*Tabela*/
+#tabela tr td,th{
+    max-width: 75px;
+}
+#tabela{
+    margin-top: 10px;
+    min-width: 600px;
+}
+#avisoRolarTabela{
+    display: none;
+}
+
+.flow{
+    width: 100%;
+    overflow: auto;
+}
+/*fim Tabela*/
+/*tipos de fontes*/ 
+h2{
+    font-size: 20px;
+    margin: 15px 0;
+}
+p{
+    margin: 15px 0;
+    text-align: center;
+}
+label{
+    font-size: 17.5px;
+    margin: 10px 0;
+}
+/*fim tipos de fontes*/ 
+
+/*light box*/
+#fundoLb{
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+.lbPergunta{
+    position: absolute;
+    background: #fff;
+    border: 1px #000 solid;
+    top: 30%;
+    left: 50%;
+    margin-left: -17.5%;
+    z-index: 101;
+    width: 35%;
+    padding: 30px 2.5%;
+    text-align: center; 
+    border-radius: 10px;
+    display: none;
+    min-width: 320px;
+
+}
+.lbPergunta h2{
+    margin: 0 0 20px;
+}
+.lbPergunta button{
+    margin: 0 2%;
+    padding: 5px 5%;
+}
+.fecharLb{
+    position: absolute;
+    right: -27px ;
+    top: 7.5px;
+    font-size: 25px;
+    font-family: arial;
+    color: #fff;
+    cursor: pointer;
+}
+/*Fim light box*/
+@media only screen and (max-width: 764px) {
+    .fundo{
+        margin: 0;
+        border-radius: 0;
+    }
+}
+@media only screen and (max-width: 688px) {
+    #avisoRolarTabela{
+        display: block
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
